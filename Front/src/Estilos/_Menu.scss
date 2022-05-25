@@ -1,0 +1,71 @@
+
+//colores
+$color_1: #EFEFEF;
+$color_2: #112B3C;
+$color_3: #FF5D5D;
+.Navbar{
+    
+
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    text-decoration: none;
+    
+    #Oppo{
+        color: $color_3;
+        font-family: 'Koulen', cursive;
+        
+    } 
+        ul{
+        width: 100%;  
+          
+            display: flex; 
+            justify-content: space-between;
+            text-decoration: none;
+           div{  
+
+            display: flex; 
+            margin: 10px;
+            align-items: center;
+            text-decoration: none;
+            
+                li{
+                margin: 10px;
+                list-style: none;
+                
+                
+                
+                .Li-navbar{
+                    text-decoration: none;
+                    color:black;
+                    
+                   padding:20px
+                   
+                }
+                .Select{
+                    background-color: $color_2;
+                    padding:20px;
+                    text-decoration: none;
+                    border-radius: 5px;
+                    color: $color_1;
+
+                }
+                
+               
+            
+                 }
+
+                span {
+                     font-size: 30px;
+                     margin: 10px;
+                    }
+                   
+             }
+            
+
+        }
+    
+
+}
