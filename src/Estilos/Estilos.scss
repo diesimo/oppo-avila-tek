@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+//Hoja principal
+*{
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  'Sora', sans-serif;
+    box-sizing: border-box;
+    
+    
+}
+$color_1: #EFEFEF;
+$color_2: #112B3C;
+$color_3: #FF5D5D;
+
+@import 'Menu';
+@import 'Modal';
+@import 'Register';
+.App{
+    background-color: color_1;
+    
+    height: 100vh;
+   
+}
+

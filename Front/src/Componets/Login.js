@@ -3,7 +3,7 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 
 import axios from "axios";
 
-const URI = "http://localhost:4000/api/users/register";
+const URI = "http://localhost:4000/api/users/login/";
 
 export default function Login(estado, cambiarEstado) {
   return (
@@ -30,10 +30,7 @@ export default function Login(estado, cambiarEstado) {
           return errores;
         }}
         onSubmit={async (valores) => {
-          await axios.post(URI, {
-            email: valores.correo,
-            password: valores.password,
-          });
+          const res = await axios.get(URI);
 
           //resetForm(); //limpia el formumario
           console.log("enviado");

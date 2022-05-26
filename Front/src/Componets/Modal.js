@@ -1,5 +1,6 @@
 import React from "react";
 
+// Ventana es compartida con Registro y Loguin
 export default function modal({ children, estado, cambiarEstado }) {
   return (
     <div>

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
-
 import axios from "axios";
 
+//URL para hacer post de un registro
 const URI = "http://localhost:4000/api/users/register";
 
 export default function Register(estado, cambiarEstado) {
