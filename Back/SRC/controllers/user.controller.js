@@ -64,7 +64,7 @@ export async function getOneUser(req, res) {
 // Obtener usuario para logeuar
 export async function getOneUserEmail(req, res) {
   try {
-    const { email, pass } = req.body;
+    const { email, password } = req.body;
 
     _User
       .findOne({
@@ -78,7 +78,7 @@ export async function getOneUserEmail(req, res) {
         } else {
           // Se comparan las contraseñas
 
-          if (bcrypt.compareSync(pass, user.password)) {
+          if (bcrypt.compareSync(password, user.password)) {
             // Devolvemos token si la contraseña es la misma
             jwt.sign({ user }, "secretkey", (err, token) => {
               res.json({
@@ -91,8 +91,6 @@ export async function getOneUserEmail(req, res) {
           }
         }
       });
-
-    //res.json(usuario);
   } catch (error) {
     console.log(error);
   }

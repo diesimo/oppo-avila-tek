@@ -110,7 +110,7 @@ export default function Register(estado, cambiarEstado) {
               <label>Password</label>
               <Field
                 className="input"
-                type="text"
+                type="password"
                 id="password"
                 name="password"
                 placeholder="Ingrese una contraseña"

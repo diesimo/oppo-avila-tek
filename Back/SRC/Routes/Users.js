@@ -42,7 +42,7 @@ router.get("/:id_usuario", verifyToken, (req, res) => {
 router.put("/:id_usuario", updateUser);
 
 //Loguear usuario
-router.post("/login", getOneUserEmail);
+router.post("/loguin", getOneUserEmail);
 
 router.get("/loginenter");
 export default router;
