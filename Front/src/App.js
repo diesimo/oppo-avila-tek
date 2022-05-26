@@ -29,7 +29,11 @@ function App() {
           <Route
             path="/Register"
             element={
-              <Modal estado={estadoModalR} cambiarEstado={cambiarEstadoR}>
+              <Modal
+                estado={estadoModalR}
+                cambiarEstado={cambiarEstadoR}
+                titulo={"Registro"}
+              >
                 <Register
                   estado={estadoModalR}
                   cambiarEstado={cambiarEstadoR}
@@ -40,7 +44,11 @@ function App() {
           <Route
             path="Login"
             element={
-              <Modal estado={estadoModalL} cambiarEstado={cambiarEstadoL}>
+              <Modal
+                estado={estadoModalL}
+                cambiarEstado={cambiarEstadoL}
+                titulo={"Loguin"}
+              >
                 <Login
                   estado={estadoModalL}
                   cambiarEstado={cambiarEstadoL}

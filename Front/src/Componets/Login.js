@@ -61,7 +61,7 @@ export default function Login(estado, cambiarEstado) {
                 placeholder="Ingrese una contraseña"
               ></Field>
             </div>
-            <button type="submit"> Registrarse</button>
+            <button type="submit"> Loguin</button>
           </Form>
         )}
       </Formik>

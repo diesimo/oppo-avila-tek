@@ -7,7 +7,7 @@ const URI = "http://localhost:4000/api/users/register";
 
 export default function Register(estado, cambiarEstado) {
   return (
-    <>
+    <div className="formulario">
       <Formik
         initialValues={{
           nombre: "",
@@ -60,15 +60,17 @@ export default function Register(estado, cambiarEstado) {
       >
         {({ errors }) => (
           <Form className="formulario">
-            <div>
+            <div className="input">
               <label>Nombre</label>
               <Field
+                className="input"
                 type="text"
                 id="nombre"
                 name="nombre"
                 placeholder="Ingrese su nombre"
               ></Field>
               <ErrorMessage
+                className="Error"
                 name="nombre"
                 component={() => <div className="error">{errors.nombre}</div>}
               ></ErrorMessage>
@@ -76,12 +78,14 @@ export default function Register(estado, cambiarEstado) {
             <div>
               <label>Apellido</label>
               <Field
+                className="input"
                 type="text"
                 id="apellido"
                 name="apellido"
                 placeholder="Ingrese su apellido"
               ></Field>
               <ErrorMessage
+                className="Error"
                 name="apellido"
                 component={() => <div className="error">{errors.apellido}</div>}
               ></ErrorMessage>
@@ -89,12 +93,14 @@ export default function Register(estado, cambiarEstado) {
             <div>
               <label>Correo</label>
               <Field
+                className="input"
                 type="correo"
                 id="correo"
                 name="correo"
                 placeholder="Ingrese su correo"
               ></Field>
               <ErrorMessage
+                className="Error"
                 name="correo"
                 component={() => <div className="error">{errors.correo}</div>}
               ></ErrorMessage>
@@ -103,6 +109,7 @@ export default function Register(estado, cambiarEstado) {
             <div>
               <label>Password</label>
               <Field
+                className="input"
                 type="text"
                 id="password"
                 name="password"
@@ -113,6 +120,6 @@ export default function Register(estado, cambiarEstado) {
           </Form>
         )}
       </Formik>
-    </>
+    </div>
   );
 }

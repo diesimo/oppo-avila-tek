@@ -1,14 +1,14 @@
 import React from "react";
 
 // Ventana es compartida con Registro y Loguin
-export default function modal({ children, estado, cambiarEstado }) {
+export default function modal({ children, estado, cambiarEstado, titulo }) {
   return (
     <div>
       {estado && (
         <div className="modal">
           <div className="contenedor">
             <div>
-              <h1> Registro</h1>
+              <h1> {titulo}</h1>
             </div>
 
             <span className="boton" onClick={() => cambiarEstado(false)}>
